@@ -1,0 +1,243 @@
+@import url('http://fonts.cdnfonts.com/css/blanka');
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');:root{
+
+    --orange:#ff681d;
+    --black:#080808;
+    --light-color:rgb(255, 255, 255);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+
+
+*{
+    margin-left: 10px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    overflow-x: hidden;
+    padding: 0%;
+    margin: 0%;
+    
+ }
+
+
+
+.header{
+    position:sticky;
+    top:0px; left:0px; right: 0px; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 110%;
+    justify-content: space-between;
+    padding:0px 8px -10px 8px;
+    background:#fff;
+    margin-left: -7px;
+ }
+ 
+ .header .logo{
+    font-family: Blanka;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color:var(--black);
+    align-items: center;
+    margin-left: 750px;
+    margin-top: -12px;
+ }
+ 
+ .header .logo .i {
+    color:var(--orange);
+ }
+@media screen and (max-width:410px){
+  .header .logo{
+        left:233px;
+    }
+    
+}
+ section{
+    background: #d9d9d9;
+    position: relative;
+    width: 80%;
+    height: 110vh;
+    display: flex;
+    margin: 50px 56px 63px 150px;
+    border-radius: 30px;
+    background:  solid rgb(182, 180, 180);
+}
+ .content{
+     top: 50px;
+    margin-left: -150px;
+    justify-content: center;
+    align-items: center;
+    width: 42%;
+    height: 100%;
+}
+
+ .form{
+     margin-top: 40px;
+     height: 595px;
+    width: 70%;
+    margin-left: 250px;
+    background: rgb(218, 217, 217)0;
+    align-items: center;
+    
+}
+ h2{
+    outline-color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family:  'Inter', sans-serif;
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    
+}
+.form .inptbx{
+    margin-bottom: 20px;
+    width: -250px;
+}
+ .inptbx span{
+
+font-size: 16px;
+font-family: 'Inter', sans-serif;
+display: inline-block;
+color: #080808;
+font-weight: 300;
+
+}
+.inptbx input{
+    width: 90%;
+    padding: 10px 20px;
+font-size: 20px;
+border: 1 px solid black;
+color: #000000;
+font-family: 'Inter', sans-serif;
+background: transparent;
+border-radius: 20px;
+display: inline-block;
+color: #080808;
+font-weight: 400;
+}
+.inptbx input[type="submit"]{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+}
+.inptbx input[type="submit"]:hover{
+    color: rgb(243, 9, 9);
+}
+.text1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #0b0b0b;
+    font-weight: light;
+    font-size: 18px;
+
+}
+.text1 input[type="checkbox"]{
+    height: 15px;
+    width: 20px;
+}
+.inptbx p{
+    color: #080808;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 100px;
+    
+}
+.inptbx p a{
+    color: #050505;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.form1 img{
+    height: 650px;
+    width: 520px;
+    bottom: 10px;
+    margin-top: -660px;
+    margin-left: 525px;
+    border-radius: 30px;
+    background: rgb(218, 217, 217)0;
+}
+
+
+.iconify{
+   margin:-51px 0px 11px 22px;
+   height: 39px;
+}
+
+.text1 p{
+   font-family: 'Inter', sans-serif;  
+   font-size: 18px;
+   font-weight: bolder;
+   margin-left: 154px;
+}
+
+a:-webkit-any-link {
+   color: -webkit-link;
+   cursor: pointer;
+   text-decoration: none;
+}
+@media screen and (max-width:410px){
+    section{
+        margin-left: 183px;
+        width: 100%;
+        background: #d3d3d3;
+        height: 100%;
+    }
+   .header .logo{
+       margin-left: 144px;
+       font-size: 40px;
+      margin-top: 20px;
+
+   }
+   .content{
+    
+      margin-left: -447px;
+      border-radius: 20px;
+  }
+   
+     .form{
+         margin-top:0px;
+         
+     width: 255%;
+     height: 100%;
+    
+   }
+   .form.inptbx{
+      left:30px;
+   }
+   h2{
+       font-size: 25px;
+       margin-left: -16px;
+   }
+    
+}
+
+#preloader{
+    background: white url(logo.png) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
